@@ -1,0 +1,113 @@
+@keyframes right-left {
+    0% {
+        opacity: 0.1;
+        transform: translateX(100px);
+    }
+}
+
+@keyframes growing {
+    0% {
+        opacity: 0;
+        transform: scale(.5);
+    }
+}
+header a{
+    animation: growing 1s ease;
+}
+.itens a{
+    animation: growing 1s ease;
+}
+
+main img {
+    animation: right-left 1s ease;
+}
+.main-text a:active{
+    transform: scale(.8);
+    transition: .2s ease;
+    color: ghostwhite;
+    background-color: #101010;
+}
+.mh-navbar a:active{
+    transform: scale(.7);
+    transition: .2s ease;
+}
+
+[data-anime] {
+    opacity: 0;
+}
+
+[data-anime="grow"] {
+    transform: scale(.5);
+    transition: .3s;
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.news-card a:active {
+    transition: 100ms;
+    transform: scale(.9);
+    background-color: #101010;
+    color: ghostwhite;
+}
+
+footer a:active{
+    transform: scale(.9);
+    transition: .3s ease;
+    background: none;
+}
+@media (max-width: 1023px) {
+    .a-click {
+        transition: .4s;
+        background-color: #101010
+    }
+
+    .img-click {
+        transition: .4s;
+        filter: brightness(.6);
+    }
+}
+
+@media (min-width: 1023px) {
+    .a-mouse-enter {
+        transition: .4s;
+        background-color: #101010
+    }
+
+    .img-mouse-enter {
+        transition: .4s;
+        filter: brightness(.6);
+    }
+
+    .main-text a:hover {
+        background-color: #101010;
+        color: ghostwhite;
+        transition: .5s;
+    }
+
+    .news-card a:hover {
+        background-color: #101010;
+        color: ghostwhite;
+        transition: .5s;
+    }
+
+    .main-text a:hover{
+        color: ghostwhite;
+        background-color: #101010;
+    }
+
+    .mh-navbar a:hover{
+        filter: contrast(.3);
+    }
+
+    footer div a:hover{
+        filter: contrast(.2);
+    }
+}
+
+
+.displayNone {
+    display: none;
+}
